@@ -15,11 +15,13 @@ evidence.zasilka_vracena(2, datetime(2024, 6, 7), "Zásilka vrácena odesílatel
 print("Info o zasilce 1:")
 print(evidence.zasilka_info(1))
 
-print("Info o zasilce 2:")
+print("\nInfo o zasilce 2:")
 print(evidence.zasilka_info(2))
 
-print("Historie zasilky 1:")
-print(evidence.historie_zasilky(1))
+print("\nHistorie zasilky 1:")
+for zaznam in evidence.historie_zasilky(1):
+    print(zaznam)
 
-print("Historie zasilky 2:")
-print(evidence.historie_zasilky(2))
+print("\nHistorie zasilky 2:")
+for zaznam in evidence.historie_zasilky(2):
+    print(zaznam)
